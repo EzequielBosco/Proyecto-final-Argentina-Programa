@@ -1,0 +1,13 @@
+body{
+    background-color: white;
+}
+.container{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.col{
+   margin-left: 10px;
+   margin-top: 10px;
+   border-color: white;
+}

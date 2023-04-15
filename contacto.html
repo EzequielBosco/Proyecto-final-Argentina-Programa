@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Indumentaria</title>
+    <link rel="icon" type="png" href="img/Nikelogo.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Heebo:wght@900&family=Nunito:wght@800&family=Salsa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary m-1">
+            <div class="container-fluid">
+            <img src="img/nike.png" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute top-0 start-50 translate-middle-x m-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reclamo</a>
+                </li>
+                </ul>
+                <form class="d-flex position-absolute top-0 end-0 m-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+      <div class="container">
+        <p class="text-center">Contacto</p>
+      </div>
+      <div class="container-fluid">
+            <div class="container p-2">
+                <form>
+                    <div class="card-contact">
+                        <div class="form-group">
+                            <label for="name"><h4 class="color-white">First name</h4></label>
+                            <input type="text" class="form-control form-control-square" id="name" name="name" placeholder="Your name" aria-required="true">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="email"><h4 class="color-white">Email</h4></label>
+                            <input type="email" class="form-control form-control-square" id="email" name="email" placeholder="name@example.com">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="message"><h4 class="color-white">Message</h4></label>
+                            <textarea class="form-control form-control-square" id="message" name="message"></textarea>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <button type="submit" class="button-anim" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog ">
+                            <div class="modal-content">
+                                <div class="modal-header text-dark">
+                                    <h5 class="modal-title" id="exampleModalLabel">Thanks for contact</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-dark">
+                                    <p>We respond as soon as possible!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary  bg-dark text-light" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+      </div>
+    </section>
+
+    <div class="fondo-negro">
+        <h6>ENTERATE ANTES QUE NADIE</h6>
+ </div>
+ <div class="seccion-formulario">
+     <div class="formulario-contenedor">
+       <p>Registrate para recibir las últimas novedades de Nike. Sé el primero en conocer los últimos lanzamientos y ofertas exclusivas.</p>
+       <form class="formulario">
+         <label for="email">Dirección de correo electrónico*</label>
+         <input type="email" id="email" name="email" required>
+         <label for="fecha">Fecha de nacimiento*</label>
+         <input type="date" id="fecha" name="fecha" required>
+         <label for="preferencias">Preferencias de compra</label>
+         <select id="preferencias" name="preferencias">
+           <option value="opcion1">Elegir</option>
+           <option value="opcion2">Ninguna</option>
+           <option value="opcion3">Hombre</option>
+           <option value="opcion3">Mujer</option>
+           <option value="opcion3">Niños/a</option>
+         </select>
+         <input type="submit" value="SUSCRIBITE">
+       </form>
+       <p>Al registrarte, aceptás los Términos y Condiciones y la Política de Privacidad y Cookies de Nike.</p>
+       <p>Tus datos serán administrados por Southbay S.R.L.</p>
+     </div>
+     <div class="imagen-contenedor">
+       <img src="img/nike-formulario.png" alt="imagen ilustrativa">
+     </div>
+   </div>
+    <section>
+        <div class="banner">
+            <div class=" p-3" >MOVING FORWARD</div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

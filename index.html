@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Heebo:wght@900&family=Nunito:wght@800&family=Salsa&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -50,10 +50,12 @@
       </div>
      <div class="container-fluid">
         <div class="col">
-            <img src="img/DN3555_600_A_PREM.webp" class="rounded float-start" style="width: 350px;height: 350px; margin-left: 20px;"  alt="...">
-            <img src="img/DQ7659_101_A_PREM.webp" class="rounded " style="width: 350px;height: 350px; margin-left: 3px;" alt="...">
-            <img src="img/DQ8426_060_A_PREM-hei-3144-wid-3144-fmt.webp" class="rounded"  style="width: 350px;height: 350px;"alt="...">
-            <img src="img/DR0453_001_A_PREM.webp" class="rounded"  style="width: 350px;height: 350px;"alt="...">
+        <ul> 
+            <li><img src="img/DN3555_600_A_PREM.webp" class="rounded float-start" style="width: 350px;height: 350px; margin-left: 20px;"  alt="..."></li>
+            <li><img src="img/DQ7659_101_A_PREM.webp" class="rounded " style="width: 350px;height: 350px; margin-left: 3px;" alt="..."></li>
+            <li><img src="img/DQ8426_060_A_PREM-hei-3144-wid-3144-fmt.webp" class="rounded"  style="width: 350px;height: 350px;"alt="..."></li>
+            <li><img src="img/DR0453_001_A_PREM.webp" class="rounded"  style="width: 350px;height: 350px;"alt="..."></li>
+        </ul>
         </div>
      </div>
      
@@ -104,9 +106,40 @@
         </div>
     </section>
     <footer>
+        <div class="fondo-negro">
+               <h6>ENTERATE ANTES QUE NADIE</h6>
+        </div>
+        <div class="seccion-formulario">
+            <div class="formulario-contenedor">
+              <p>Registrate para recibir las últimas novedades de Nike. Sé el primero en conocer los últimos lanzamientos y ofertas exclusivas.</p>
+              <form class="formulario">
+                <label for="email">Dirección de correo electrónico*</label>
+                <input type="email" id="email" name="email" required>
+                <label for="fecha">Fecha de nacimiento*</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <label for="preferencias">Preferencias de compra</label>
+                <select id="preferencias" name="preferencias">
+                  <option value="opcion1">Elegir</option>
+                  <option value="opcion2">Ninguna</option>
+                  <option value="opcion3">Hombre</option>
+                  <option value="opcion3">Mujer</option>
+                  <option value="opcion3">Niños/a</option>
+                </select>
+                <input type="submit" value="SUSCRIBITE">
+              </form>
+              <p>Al registrarte, aceptás los Términos y Condiciones y la Política de Privacidad y Cookies de Nike.</p>
+              <p>Tus datos serán administrados por Southbay S.R.L.</p>
+            </div>
+            <div class="imagen-contenedor">
+              <img src="img/nike-formulario.png" alt="imagen ilustrativa">
+            </div>
+          </div>
 
 
     </footer>
+    <a href="https://api.whatsapp.com/send?phone=01122345" target="_blank" class="whatsapp-float">
+        <img src="img/wahtsapp.png" alt="Icono de WhatsApp">
+      </a>
     <script src="main.js"></script>
 </body>
 </html>

@@ -3,9 +3,11 @@ body{
     font-family: 'Heebo', sans-serif;
 }
 .container{
-    font-size: 40px;
     font-weight: bold;
     margin-top: 10px;
+}
+#titulo {
+  font-size: 40px;
 }
 .col {
     width: 100%;
@@ -54,7 +56,6 @@ body{
     font-size: 25px;
     font-weight: lighter;
     margin-top: 20px;
-    
 }
 .tarjeta{
     text-align: center;
@@ -81,65 +82,54 @@ body{
 }
 .fondo-negro {
     background-color: #000;
-    padding: 50px;
+    padding: 40px;
     color: #fff;
-  }
+}
 .fondo-negro h6 {
     font-family: 'Heebo', sans-serif;
     font-size: 40px;
     text-align: center;
 }
-.seccion-formulario {
-    display: flex;
-   
-  }
+
+.formulario-contenedor {
+  color: #fff;
+}
   
-  .formulario-contenedor {
-    flex: 1;
-    padding: 0px;
-    color: #fff;
-  }
-  
-  
-  .formulario-contenedor p {
-    font-size: 13px;
+.formulario-contenedor h3 {
+    font-size: 25px;
     font-family: 'Heebo',sans-serif;
     color:#575454;
     margin-bottom: 10px;
-  }
-  
-  .formulario {
-    
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 5px;
-    color: #000;
-  }
-  
-  .formulario label,
-  .formulario input,
-  .formulario select {
-    display: block;
+}
+
+.formulario-contenedor p {
+    font-size: 16px;
+    font-family: 'Heebo',sans-serif;
+    color:#575454;
     margin-bottom: 10px;
-  }
+}
+.formulario-contenedor button {
+  background-color: black;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.formulario-contenedor-1 p {
+  font-size: 16px;
+  font-family: 'Heebo',sans-serif;
+  color:#ebebeb;
+  margin-bottom: 10px;
+}
+.formulario-contenedor-1 button {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  font-size: 17px;
+}
+.padding-reclamo {
+  padding: 40px;
+}
   
-  .formulario input[type="submit"] {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .imagen-contenedor {
-    width: 50%;
-  }
-  
-  .imagen-contenedor img {
-    max-width: 100%;
-    height: auto;
-  }
-  .whatsapp-float {
+.whatsapp-float {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -153,8 +143,39 @@ body{
     font-size: 24px;
     z-index: 9999;
     transition: opacity 0.3s ease-in-out;
-  }
+}
   
-  .whatsapp-float:hover {
+.whatsapp-float:hover {
     opacity: 0.8;
+}
+
+.fondo-blanco {
+  background-color: #000;
+  color:#fff
+}
+.footer {
+  background-color: #000;
+  padding-bottom: 5rem;
+}
+i {
+  color: #d3d3d3;
+  font-size: 1.6rem;
+  padding-left: 25px;
+  cursor: pointer;
+}
+i:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+.mini {
+  font-size: 1.2rem;
+}
+a:link, a:visited, a:active { 
+  text-decoration: none;
   }
+.blanco {
+    color: #d1d1d1;
+}
+a:hover {
+  color:#ffffff
+}

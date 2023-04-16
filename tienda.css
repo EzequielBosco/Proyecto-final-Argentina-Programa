@@ -1,0 +1,61 @@
+.boxTienda {
+    padding: 50px;
+    background-color: #f6f6f6;
+  
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.tienda {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.cardTienda {
+    background: #ffffff;
+    width: 30%;
+    border-radius: 3px;
+    padding: 1.25rem;
+    transition: 0.4s;
+    margin-bottom: 20px;
+    
+}
+
+.cardTienda img{
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+}
+
+.cardTienda a {
+    color: #000807;
+    margin-left: 200px;
+}
+
+.cardTienda a:hover{
+    color: #9c9c9c;
+}
+
+.cardTienda:hover {
+    cursor: pointer;
+    transform: scale(0.9, 0.9);
+}
+
+.cardTienda h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: px;
+}
+
+.cardTienda p {
+    font-size: 12px;
+    color: #9c9c9c;
+}
+

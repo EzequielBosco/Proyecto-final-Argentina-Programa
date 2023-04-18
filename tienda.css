@@ -25,7 +25,7 @@
     padding: 1.25rem;
     transition: 0.4s;
     margin-bottom: 20px;
-    
+    border-radius: 20px;
 }
 
 .cardTienda img{
@@ -59,3 +59,6 @@
     color: #9c9c9c;
 }
 
+img{
+    border-radius: 50px;
+}

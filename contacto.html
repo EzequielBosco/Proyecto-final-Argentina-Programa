@@ -17,14 +17,14 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary m-1">
             <div class="container-fluid">
-            <img src="img/nike.png" alt="logo">
+                <a href="index.html"><img src="img/nike.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-absolute top-0 start-50 translate-middle-x m-3">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="tienda.html">Tienda</a>
@@ -32,7 +32,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="nosotros.html">Nosotros</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="contacto.html">Contacto / reclamo</a>
                 </li>
                 </ul>
@@ -51,21 +51,21 @@
       <br>
       <div class="container-fluid">
         <div class="row">
-            <div class="col fondo-negro">
+            <div class="col-md-6 col-xs-12 fondo-negro">
                 <div class="formulario-contenedor-1">
                     <div class="container">
                     <h3><u>Registro</u></h3>
                     <div class="container-fluid">
                     <p>Registrate para recibir las últimas novedades de Nike. Sé el primero en conocer los últimos lanzamientos y ofertas exclusivas.</p>
-                    <form class="formulario-contenedor">
+                    <form class="formulario-contenedor" id="btn-contacto-form">
                         <div class="form-group">
                             <label for="name"><p>Nombre</p></label>
-                            <input type="text" class="form-control form-control-square" id="name" name="name" placeholder="Tu nombre" aria-required="true">
+                            <input type="text" class="form-control form-control-square" id="name" name="name" placeholder="Tu nombre" aria-required="true" required>
                         </div>
                         <br>
                         <div class="form-group">
                             <label for="email"><p>Correo</p></label>
-                            <input type="email" class="form-control form-control-square" id="email" name="email" placeholder="nombre@ejemplo.com">
+                            <input type="email" class="form-control form-control-square" id="email" name="email" placeholder="nombre@ejemplo.com" required>
                         </div>
                         <br>
                         <div class="form-group">
@@ -84,7 +84,7 @@
                             </select>
                         </div>
                         <br>
-                        <button type="submit" value="SUSCRIBITE">SUSCRIBITE</button>
+                        <button type="submit" id="btn-contacto-form" value="SUSCRIBITE">SUSCRIBITE</button>
                     </div>
                     </form>
                     </div>
@@ -92,28 +92,28 @@
                     <p>Al registrarte, aceptás los Términos y Condiciones y la Política de Privacidad y Cookies de Nike.</p>
                 </div>
             </div>
-            <div class="col">
-                <div class="formulario-contenedor padding-reclamo">
+            <div class="col-md-6 col-xs-12">
+                <div class="padding-reclamo">
                     <h3><u>Reclamo</u></h3>
                     <div class="container-fluid">
                     <p>¿En qué podemos ayudarte? Te podes comunicar con nosotros en caso de devolución o cambio de producto</p>
-                    <form class="formulario-contenedor">
+                    <form class="formulario-contenedor" id="btn-reclamo-form">
                         <div class="form-group">
                             <label for="name"><p>Nombre</p></label>
-                            <input type="text" class="form-control form-control-square" id="name" name="name" placeholder="Tu nombre" aria-required="true">
+                            <input type="text" class="form-control form-control-square" id="name" name="name" placeholder="Tu nombre" aria-required="true" required>
                         </div>
                         <br>
                         <div class="form-group">
                             <label for="email"><p>Correo</p></label>
-                            <input type="email" class="form-control form-control-square" id="email" name="email" placeholder="nombre@ejemplo.com">
+                            <input type="email" class="form-control form-control-square" id="email" name="email" placeholder="nombre@ejemplo.com" required>
                         </div>
                         <br>
                         <div class="form-group">
                             <label for="message"><p>Mensaje</p></label>
-                            <textarea class="form-control form-control-square" id="message" name="message" placeholder="Explique su reclamo"></textarea>
+                            <textarea class="form-control form-control-square" id="message" name="message" placeholder="Explique su reclamo" required></textarea>
                         </div>
                         <br>
-                        <button type="submit" value="ENVIAR RECLAMO">INICIAR RECLAMO</button>
+                        <button type="submit" id="btn-reclamo-form" value="ENVIAR RECLAMO">INICIAR RECLAMO</button>
                     </form>
                     </div>
                 </div>
@@ -142,6 +142,8 @@
                 © 2023 Southbay S.R.L. Todos los derechos reservados.
             </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <script src="contacto.js"></script>
 </body>
 </html>

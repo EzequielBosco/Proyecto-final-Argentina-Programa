@@ -13,6 +13,6 @@ $(document).ready(function() {
     
     $('#btn-reclamo-form').submit(function(event) {
       event.preventDefault();
-      alerta("", "Tu reclamo ha sido recibido", "Nos pondremos en contacto solucionarlo");
+      alerta("", "Tu reclamo ha sido recibido", "Nos pondremos en contacto para solucionarlo");
     }); 
 });

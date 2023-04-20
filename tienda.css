@@ -62,3 +62,27 @@
 img{
     border-radius: 50px;
 }
+
+@media screen and (max-width: 767px) {
+    .cardTienda {
+        width: 100%;
+    }
+    .cardTienda a {
+        margin-left: 0px;
+    }
+    .cardTienda img{
+        margin-left: 25px;
+    }
+  }
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .cardTienda {
+        width: 45%;
+        margin: 5px
+    }
+    .cardTienda a {
+        margin-left: 0px;
+    }
+    .cardTienda img{
+        margin-left: 25px;
+    }
+  }

@@ -23,8 +23,8 @@ $(".btn-pdf").click(function(event){
   var email = $("#email").val();
   var mensaje = $("#message").val();
   
-  var pdf = new window.jspdf.jsPDF({orientation: 'p',unit: 'mm',format: 'a5',putOnlyUsedFonts:true})
+  var pdf = new window.jspdf.jsPDF({orientation: 'p',unit: 'mm',format: 'a5'})
 
-  pdf.text(`Nombre: ${nombre}\nApellido: ${email}\nEmail: ${mensaje}`, 40, 30);
+  pdf.text(`Nombre: ${nombre}\nEmail: ${email}\nMensaje: ${mensaje}`, 10, 20);
   pdf.save(`pdf-creado.pdf`);
 });
